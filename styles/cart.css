@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.125rem;
+    margin-top: 2rem;
+    width: 8rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #f1d5bb;
+}
+
+h2 {
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #f1d5bb;
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0 3rem 3rem;
+}
+
+h4 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+}
+
+.menu {
+    background-color: black;
+    height: 50rem;
+    width: 8.25rem;
+    margin:2rem 2rem 5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.icon {
+    margin: 0 3rem;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.icon:hover {
+    color: #f1d5bb;
+}
+
+#foodMenu {
+    filter: invert(1);
+    width: 8.25rem;
+    padding: 0 3rem;
+    margin-bottom: 4rem;
+}
+
+#cart {
+    color: black;
+    background-color: #f1d5bb;
+    padding: 3rem 2.75rem;
+    margin: 0 0 4rem;
+}
+
+.cartImage {
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 100%;
+    margin: 2rem 1.5rem;
+}
+
+.name {
+    margin: 2rem 1rem;
+}
+
+
+.wrapper, .item1, .item2, .item3, .item4 {
+    display: flex;
+}
+
+
+
+/* second container sec */
+
+.cartItem {
+    width: 38rem;
+    height: 38rem;
+    margin-left: 1.5rem;
+    background-color: #f1d5bb;
+}
+
+.item1p-a, .item1p-b, .item1p-c {
+    font-size: 1.25rem;
+    margin-top: 4rem ;
+}
+
+.item1p-a {
+    margin-left: 3rem;
+}
+
+.item1p-b, .item2p-b, .item3p-b, .item4p-b {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 2.1875rem;
+    padding: 0.4rem 0.8rem;
+    background-color: white;
+}
+
+.del1, .del2, .del3, .del4 {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 4rem 1rem 0 5.6rem;
+}
+
+.item2p-a, .item2p-b, .item2p-c {
+    font-size: 1.25rem;
+    margin-top: 4rem ;
+}
+
+.item2p-a {
+    margin-left: 5.2rem;
+}
+
+.item3p-a, .item3p-b, .item3p-c {
+    font-size: 1.25rem;
+    margin-top: 4rem ;
+}
+
+.item3p-a {
+    margin-left: 5.9rem;
+}
+
+.item4p-a, .item4p-b, .item4p-c {
+    font-size: 1.25rem;
+    margin-top: 4rem ;
+}
+
+.item4p-a {
+    margin-left: 0.7rem;
+}
+
+
+
+/* third conrainer sec */
+
+.confirmSection {
+    margin: 8rem 2rem 0 1.5rem;
+}
+
+.confirm {
+    width: 27.6875rem;
+    height: 17.875rem;
+    background-color: #f1d5bb;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1.2rem;
+}
+
+.subtotal {
+    font-size: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    word-spacing: 2rem;
+}
+
+.btn1 {
+    font-size: 1.875rem;
+    margin-left: 2rem;
+    padding: 1rem 5.5rem;
+    color: white;
+    background-color: black;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.promo {
+    border: 1px solid #f1d5bb;
+    width: 27.6875rem;
+    height: 20.375rem;
+}
+
+input {
+    margin-left: 2rem;
+    width: 22.8125rem;
+    height: 4.9rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #f1d5bb;
+}
+
+.promo input {
+    font-size: 1.875rem;
+    padding-left: 1rem;
+}
+
+::placeholder {
+    font-size: 1.875rem;
+    color: #00000099;
+    padding-left: 1rem;
+}
+
+.btn2 {
+    font-size: 1.875rem;
+    margin-left: 2rem;
+    padding: 1rem 3rem;
+    background-color: black;
+    color: white;
+
+}
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 0.9375rem;
+    margin-left: 14rem;
+}

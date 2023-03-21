@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* styling for the nav section  */
+
+nav {
+    margin-top: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.logo-txt {
+    margin-right: 9rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list {
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.bag-icon {
+    margin-left: 43rem;
+}
+/* end of styling for the nav section  */
+
+/* styling for the text container  */
+.text-container {
+    margin-left: 3rem;
+    margin-top: 13rem;
+}
+
+h1 {
+    font-size: 3.125rem;
+    color: #549A0A;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.375rem;
+}
+
+p {
+    font-size: 0.875rem;
+    width: 22.625rem;
+    margin-top: 0.5;
+}
+
+.text-container button {
+    padding: 0.625rem 1.8rem;
+    background-color: #549A0A;
+    border-radius: 6.25rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+/* end of styling for the text container  */
+
+/* styling for the upper and lower large circle */
+
+.upper-lg-circle, .lower-lg-circle {
+    width: 79.813rem;
+    height: 79.813rem;
+    background-color: #AAD36C;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.upper-lg-circle {
+    top: -120%;
+    left: 15%;
+    z-index: -1;
+}
+
+.lower-lg-circle {
+    left: -55%;
+    top: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Mulish', sans-serif;
+}
+
+main {
+    height: inherit;
+    margin-top: 0;
+}
+
+.background-container {
+    background-image: url("../images/restaurant1.png");
+    height: inherit;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 3.75rem;
+}
+
+span {
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.5625rem;
+    color: white;
+    padding: 0 6rem;
+    text-align: center;
+}
+
+button {
+    font-size: 1.875rem;
+    font-weight: 300;
+    padding: 0.8rem 3rem;
+    margin-top: 3rem;
+    border: none;
+}
+
+.cart {
+    margin-left: 0.5rem;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+} */
