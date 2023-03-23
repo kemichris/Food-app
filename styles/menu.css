@@ -43,6 +43,19 @@ main {
 .home, .cart, .location, .logout {
     filter: invert(100%);
 }
+
+.cart-anchor {
+    text-decoration: none;
+}
+
+.cart-count {
+    position: relative;
+    right: 50%;
+    bottom: 85%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 /* end of styling for the side bar  */
 
 /* styling for the food section  */
@@ -79,17 +92,18 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #AAD36C;
+    background-color: #549A0A;
 }
 
 .text-btn p {
     font-weight: 600;
     margin-right: 1rem;
-    color: black;
+    color: white;
 }
 
 .text-btn button {
-    background-color: white;
+    background-color: black;
+    color: white;
     border: none;
     padding: 0.2rem 0.5rem;
     font-size: 1rem;

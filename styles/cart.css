@@ -47,6 +47,19 @@ main {
 .home, .location, .logout {
     filter: invert(100%);
 }
+
+.cart-anchor {
+    text-decoration: none;
+}
+
+.cart-count {
+    position: relative;
+    left: 47%;
+    bottom: 74%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 /* end of styling for the side bar  */
 
 /* styling for the order section  */
