@@ -83,12 +83,18 @@ main {
     background-color: #AAD36C;
     width: 38.063rem;
     padding: 2rem;
+    /* height: fit-content; */
 }
 
 .food-price {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    /* display: none; */
+}
+
+.active.food-price {
+    display: none;
 }
 
 .food-img {
@@ -100,6 +106,7 @@ main {
 
 .name-price {
     margin-right: 9rem;
+    width: 9.375rem;
 }
 
 .name-price p {
