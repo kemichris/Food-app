@@ -2,18 +2,18 @@
 const cartCounter = document.querySelector(".cart-count");
 const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
 
-let cart = JSON.parse(localStorage.getItem("cart"));
+// let cart = JSON.parse(localStorage.getItem("cart"));
 
-if (!cart) {
-    cart = 0;
-}
+// if (!cart) {
+//     cart = 0;
+// }
 
-for (let i = 0; i < addToCartBtn.length; i++) {
-    addToCartBtn[i].addEventListener("click", updateCart);
+// for (let i = 0; i < addToCartBtn.length; i++) {
+//     addToCartBtn[i].addEventListener("click", updateCart);
     
-}
+// }
 
-window.onload = cartCounter.innerHTML =cart;
+// window.onload = cartCounter.innerHTML =cart;
 // script end for cart update 
 
 
@@ -56,18 +56,27 @@ foodsBtn[7].addEventListener("click", ()=>{
 });
 // scritp end for adding items to cart 
 
+// updating the cart counter 
+for (let i = 0; i < addToCartBtn.length; i++) {
+    addToCartBtn[i].addEventListener("click", updateCart);
+    
+};
+// ends here 
 
 
 // fuction to update the cart number 
 function updateCart() {
-    cart++;
+    let cart = JSON.parse(localStorage.getItem("foods")).length;
     cartCounter.innerHTML = cart;
-    updateLocalStorage()
+//     cart++;
+//     cartCounter.innerHTML = cart;
+//     updateLocalStorage()
+    
 }
 
 // function to update the localStorage 
 function updateLocalStorage() {
-    localStorage.setItem("cart", JSON.stringify(cart)); 
+    // localStorage.setItem("cart", JSON.stringify(cart)); 
     localStorage.setItem("foods", JSON.stringify(cartedItems));
 }
 

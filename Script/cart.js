@@ -1,20 +1,121 @@
 const cartCounter = document.querySelector(".cart-count");
 const cartAnchor = document.querySelector(".cart-anchor");
 const displayedFood = document.querySelectorAll(".food-price");
+const quatityDisplays = document.querySelectorAll(".display");
+const decreaseBtn = document.querySelectorAll(".reduce-btn");
+const IncreaseBtn = document.querySelectorAll(".increament-btn");
+const delBtn = document.querySelectorAll(".del-btn");
 
-let cart = JSON.parse(localStorage.getItem("cart"));
+// script for cart item numbers 
+
+let cart = JSON.parse(localStorage.getItem("foods")).length;
 cartCounter.innerHTML = cart;
-
 let cartItems = JSON.parse(localStorage.getItem("foods"));
-
+// ends here
 
 cartDisplay();
 
+// script for the display value and buttons
+let displayValue = 1;
 
+quatityDisplays.forEach((quatityDisplay) => {
+    quatityDisplay.value = displayValue;
+});
+
+// increament value buttons 
+IncreaseBtn[0].addEventListener("click", ()=>{
+    increament(0);
+});
+IncreaseBtn[1].addEventListener("click", ()=>{
+    increament(1);
+});
+IncreaseBtn[2].addEventListener("click", ()=>{
+    increament(2);
+});
+IncreaseBtn[3].addEventListener("click", ()=>{
+    increament(3);
+});
+IncreaseBtn[4].addEventListener("click", ()=>{
+    increament(4);
+});
+IncreaseBtn[5].addEventListener("click", ()=>{
+    increament(5);
+});
+IncreaseBtn[6].addEventListener("click", ()=>{
+    increament(6);
+});
+IncreaseBtn[7].addEventListener("click", ()=>{
+    increament(7);
+});
+// ends here
+
+// decrease value buttons 
+decreaseBtn[0].addEventListener("click", ()=>{
+    reduce(0);
+});
+decreaseBtn[1].addEventListener("click", ()=>{
+    reduce(1);
+});
+decreaseBtn[2].addEventListener("click", ()=>{
+    reduce(2);
+});
+decreaseBtn[3].addEventListener("click", ()=>{
+    reduce(3);
+});
+decreaseBtn[4].addEventListener("click", ()=>{
+    reduce(4);
+});
+decreaseBtn[5].addEventListener("click", ()=>{
+    reduce(5);
+});
+decreaseBtn[6].addEventListener("click", ()=>{
+    reduce(6);
+});
+decreaseBtn[7].addEventListener("click", ()=>{
+    reduce(7);
+});
+// ends here 
+
+// delete item buttons 
+delBtn[0].addEventListener("click", ()=>{
+    deleteItem("smashed-avo");
+    window.location.reload(true);
+});
+delBtn[1].addEventListener("click", ()=>{
+    deleteItem("Yin & Yang");
+    window.location.reload(true);
+});
+delBtn[2].addEventListener("click", ()=>{
+    deleteItem("Pancakes");
+    window.location.reload(true);
+});
+delBtn[3].addEventListener("click", ()=>{
+    deleteItem("Huevos Rancheros");
+    window.location.reload(true);
+});
+delBtn[4].addEventListener("click", ()=>{
+    deleteItem("Rancheros (Tofu)");
+    window.location.reload(true);
+});
+delBtn[5].addEventListener("click", ()=>{
+    deleteItem("Breakkie Roll");
+    window.location.reload(true);
+});
+delBtn[6].addEventListener("click", ()=>{
+    deleteItem("Breakkie Roll2");
+    window.location.reload(true);
+});
+delBtn[7].addEventListener("click", ()=>{
+    deleteItem("Burrito");
+    window.location.reload(true);
+});
+// ends here 
+
+
+// function to display cart items 
 function cartDisplay() {
     for (let i = 0; i < cartItems.length; i++) {
         const cartFoods = cartItems[i];
-
 
         switch (cartFoods) {
             case "smashed-avo":
@@ -56,65 +157,31 @@ function cartDisplay() {
     }
 }
 
+// function for increase and reduce display value 
+function increament(index) {
+    quatityDisplays[index].value++;
+}
 
-// // Sample data for the food web app
-// const items = [
-//     {
-//       id: 1,
-//       name: "Burger",
-//       price: 10.99,
-//     },
-//     {
-//       id: 2,
-//       name: "Fries",
-//       price: 5.99,
-//     },
-//     {
-//       id: 3,
-//       name: "Drink",
-//       price: 2.99,
-//     },
-//   ];
-  
-//   // Empty array to store items in cart
-//   let cartItems = [];
-  
-//   // Function to add item to cart
-//   function addToCart(itemId) {
-//     // Find the item in the items array by its id
-//     let item = items.find((item) => item.id === itemId);
-  
-//     // Add the item to the cart
-//     cartItems.push(item);
-//   }
-  
-//   // Function to display the cart
-//   function displayCart() {
-//     let cart = document.getElementById("cart");
-  
-//     // Clear any existing data
-//     cart.innerHTML = "";
-  
-//     // Loop through all items in the cart and add them to the list
-//     for (let i = 0; i < cartItems.length; i++) {
-//       let item = cartItems[i];
-//       let itemNode = document.createElement("li");
-//       itemNode.innerText = `${item.name} - $${item.price}`;
-  
-//       cart.appendChild(itemNode);
-//     }
-  
-//     // Calculate and display the total price of items in the cart
-//     let totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
-//     let totalNode = document.createElement("li");
-//     totalNode.innerText = `Total: $${totalPrice.toFixed(2)}`;
-//     cart.appendChild(totalNode);
-//   }
-  
-//   // Example usage:
-//   // Add an item to the cart
-//   addToCart(1);
-  
-//   // Display the items and total price in the cart
-//   displayCart();
-  
+function reduce(index) {
+   if (quatityDisplays[index].value < 2) {
+       quatityDisplays[index].value = 1;
+   
+   } else {
+        quatityDisplays[index].value--;
+   }
+}
+// ends here
+
+// function to delete item from cart 
+function deleteItem(name) {
+    const index = cartItems.indexOf(name);
+    if (index !== -1) {
+        cartItems.splice(index, 1);
+    }
+    updateLocalStorage();
+
+}
+
+function updateLocalStorage() {
+    localStorage.setItem("foods", JSON.stringify(cartItems));
+}
