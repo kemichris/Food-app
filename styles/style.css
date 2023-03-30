@@ -98,6 +98,205 @@ p {
     top: 85%;
 }
 
+/* styling for smaller screen sizes  */
+
+@media (max-width:1318px) {
+    .bag-icon {
+        margin-left: 40rem;
+    }
+
+    .upper-lg-circle, .lower-lg-circle {
+        width: 74rem;
+        height: 74rem;
+    }
+
+    .upper-lg-circle {
+        /* top: -120%; */
+        left: 20%;
+    }
+    /* .logo-txt {
+        margin-right: 7rem;
+    } */
+  
+}
+
+@media (max-width:1270px) {
+    .bag-icon {
+        margin-left: 35rem;
+    }    
+}
+
+@media (max-width:1190px) {
+    .bag-icon {
+        margin-left: 30rem;
+    }    
+}
+
+@media (max-width:1105px) {
+    .bag-icon {
+        margin-left: 25rem;
+    }    
+}
+
+@media (max-width:1020px) {
+    .bag-icon {
+        margin-left: 20rem;
+    }
+    
+    .upper-lg-circle, .lower-lg-circle {
+        width: 69rem;
+        height: 69rem;
+    }
+
+    .lower-lg-circle {
+        left: -60%;
+    }
+}
+
+@media (max-width:950px) {
+    .bag-icon {
+        margin-left: 15rem;
+    }
+    
+    /* .upper-lg-circle, .lower-lg-circle {
+        width: 69rem;
+        height: 69rem;
+    } */
+
+    .lower-lg-circle {
+        left: -75%;
+    }
+}
+
+@media (max-width:870px) {
+    .bag-icon {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width:785px) {
+    .bag-icon {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:710px) {
+    .logo-txt {
+        margin-right: 5rem;
+    }
+
+    .list {
+        margin-right: 2rem;
+    }
+
+    .lower-lg-circle {
+        left: -95%;
+    }
+}
+
+
+@media (max-width:600px) {
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    .text-container {
+        margin-left: 1.5rem;
+        /* margin-top: 13rem; */
+    }
+
+    .list {
+        margin-right: 2rem;
+    }
+
+    .bag-icon {
+        margin-left: 2rem;
+    }
+
+    .lower-lg-circle {
+        left: -85%;
+    }
+
+    .upper-lg-circle, .lower-lg-circle {
+        width: 49rem;
+        height: 49rem;
+    }
+
+    .upper-lg-circle {
+        top: -70%;
+        left: 30%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        /* margin-bottom: 1rem; */
+    }
+    
+    h2 {
+        /* margin: 0; */
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:530px) {
+    .list {
+        margin-right: 1rem;
+        /* font-size: 0.8rem; */
+    }
+    
+}
+
+@media (max-width:495px) {
+    
+    .logo-txt {
+        margin-right: 3rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+        width: 22rem;
+    }
+
+    .upper-lg-circle, .lower-lg-circle {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .upper-lg-circle {
+        top: -45%;
+        left: 35%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .list {
+        margin-right: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .upper-lg-circle {
+        top: -50%;
+        left: 40%;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .logo-txt {
+        font-size: 0.8rem;
+    }
+
+    .bag-icon {
+        margin-left: 1rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+    
+}
 
 
 

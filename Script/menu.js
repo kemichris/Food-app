@@ -2,20 +2,6 @@
 const cartCounter = document.querySelector(".cart-count");
 const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
 
-// let cart = JSON.parse(localStorage.getItem("cart"));
-
-// if (!cart) {
-//     cart = 0;
-// }
-
-// for (let i = 0; i < addToCartBtn.length; i++) {
-//     addToCartBtn[i].addEventListener("click", updateCart);
-    
-// }
-
-// window.onload = cartCounter.innerHTML =cart;
-// script end for cart update 
-
 
 // script for adding items to the cart
 const foodsBtn = document.querySelectorAll(".add-to-cart-btn");
@@ -54,7 +40,7 @@ foodsBtn[7].addEventListener("click", ()=>{
     creatNewItem("Burrito");
     updateLocalStorage()
 });
-// scritp end for adding items to cart 
+// ends here 
 
 // updating the cart counter 
 for (let i = 0; i < addToCartBtn.length; i++) {
@@ -68,15 +54,10 @@ for (let i = 0; i < addToCartBtn.length; i++) {
 function updateCart() {
     let cart = JSON.parse(localStorage.getItem("foods")).length;
     cartCounter.innerHTML = cart;
-//     cart++;
-//     cartCounter.innerHTML = cart;
-//     updateLocalStorage()
-    
 }
 
 // function to update the localStorage 
 function updateLocalStorage() {
-    // localStorage.setItem("cart", JSON.stringify(cart)); 
     localStorage.setItem("foods", JSON.stringify(cartedItems));
 }
 

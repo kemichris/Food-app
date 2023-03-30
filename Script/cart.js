@@ -182,6 +182,14 @@ function deleteItem(name) {
 
 }
 
+// function to sum itmes 
+function sumItems() {
+    
+    
+}
+
+
+// function to update the local storage 
 function updateLocalStorage() {
     localStorage.setItem("foods", JSON.stringify(cartItems));
 }
