@@ -127,3 +127,158 @@ main {
 }
 
 
+/* styling for media responsiveness  */
+
+@media (max-width:1230px) {
+    .food-section {
+        margin-left: 15%;
+    }
+    
+}
+
+@media (max-width:1100px) {
+    .food-container {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:940px) {
+    .food-section {
+        margin-left: 18%;
+    }
+
+    .food-container {
+        margin-top: 13%;
+    }
+
+    
+}
+
+@media (max-width:800px) {
+    .food-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .food-section {
+        margin-left: 22%;
+    }
+    
+}
+
+@media (max-width:675px) {
+    .food-section {
+        margin-left: 25%;
+    }
+
+    .food img {
+        height: 12rem;
+        width: 12rem;
+
+     }
+
+     .food-container {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width:600px) {
+    .food-section {
+        margin-left: 28%;
+    }
+
+    .food img {
+        height: 10rem;
+        width: 10em;
+     }  
+     
+     .food-container {
+        margin-top: 18%;
+    }
+
+     .text-btn p {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    .text-btn button {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:520px) {
+    .nav-bar {
+        width: 5rem;
+        padding-top: 2rem;
+    }
+
+    .nav-bar img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 3.5rem;       
+    }
+    
+    .menu-icon {   
+        padding: 1.5rem 1.8rem;
+    }
+
+    .cart-count {
+        font-size: 0.8rem;
+    }
+
+    .food-section h1 {
+        font-size: 2rem;
+    }
+
+    .food-section {
+        margin-left: 30%;
+    }
+
+    .food img {
+        height: 8rem;
+        width: 8em;
+
+     }  
+
+    .text-btn {
+        padding: 0.2rem 0;
+    }
+
+     .text-btn p {
+        font-size: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width:440px) {
+     .food-container {
+        margin-top: 20%;
+    }
+
+    .food-section {
+        margin-left: 27%;
+    }
+}
+
+@media (max-width:411px) {
+   .food-section {
+       margin-left: 35%;
+   }
+
+   .food img {
+       height: 10rem;
+       width: 10em;
+   }
+
+   .text-btn p {
+       font-size: 0.8rem;
+       margin-right: 0.5rem;
+    }
+
+    .text-btn button {
+       padding: 0.2rem 0.5rem;
+       font-size: 0.8rem;
+    }
+}
+
+

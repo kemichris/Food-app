@@ -99,7 +99,7 @@ p {
     top: 85%;
 }
 
-/* styling for smaller screen sizes  */
+/* styling for media responsiveness  */
 
 @media (max-width:1318px) {
     .bag-icon {
