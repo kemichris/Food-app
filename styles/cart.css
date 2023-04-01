@@ -76,10 +76,11 @@ main {
 .orders-section {
     margin-left: 12%;
     margin-right: 2%;
+    margin-bottom: 3rem;
 }
 
 .orders {
-    margin-top: 15%;
+    margin-top: 6.3rem;
     background-color: #AAD36C;
     width: 38.063rem;
     padding: 2rem;
@@ -142,7 +143,7 @@ main {
 /* styling for the confirm section */
 
 .confirm-container {
-    margin-top: 7.5%;
+    margin-top: 6.3rem;
 }
 
 .confirm-order {
@@ -187,4 +188,207 @@ main {
     color: white;
     font-size: 1rem;
     cursor: pointer;
+}
+
+/* styling for media responsiveness  */
+
+@media (max-width:1080px) {
+    .orders {
+        width: 35rem;
+        padding: 1rem;
+    }
+
+    .orders-section {
+        margin-left: 16%;
+    }
+
+    .name-price {
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width:1030px) {
+    .orders-section {
+        margin-left: 14%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .orders {
+        width: 30rem;
+    }
+
+    .name-price {
+        margin-right: 3rem;
+    }
+
+    .increament-btn {
+        margin-right: 5rem;
+    }
+
+    .orders-section {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width:913px) {
+    .orders {
+        width: 27rem;
+    }
+
+    .name-price {
+        margin-right: 3rem;
+    }
+
+    .increament-btn {
+        margin-right: 3rem;
+    }
+
+    .orders-section {
+        margin-left: 16%;
+    }
+}
+
+@media (max-width:870px) {
+    .orders-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .orders {
+        margin-top: 5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .confirm-container, .orders-section {
+        margin-left: 22%;
+    }
+
+    .confirm-container {
+        margin-top: 0;
+        width: 18rem;
+        margin-bottom: 3rem;
+    }
+
+    .orders-section {
+        margin-bottom: 3rem;
+    } 
+}
+
+@media (max-width:600px) {
+    .orders {
+        width: 22rem;
+    }
+
+    .confirm-container, .orders-section {
+        margin-left: 25%;
+    }
+
+    .food-img {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .name-price {
+        width: 9.375rem;
+        margin-right: 2rem;
+    }
+    
+    .name-price p {
+       font-size: 0.8rem;
+    }
+
+    .increament-btn {
+        margin-right: 2rem;
+    }
+
+    .del-btn {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width:530px) {
+
+    .nav-bar {
+        width: 5rem;
+        padding-top: 2rem;
+    }
+
+    .nav-bar img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 3.5rem;       
+    }
+    
+    .cart-icon {   
+        padding: 1.5rem 1.8rem;
+    }
+
+    .cart-count {
+        font-size: 0.8rem;
+        bottom: 77%;
+    }
+
+
+    .orders-section h1 {
+        font-size: 2rem;
+    }
+
+    .orders {
+        margin-top: 3.5rem;
+        width: 19rem;
+    }
+
+    .confirm-container, .orders-section {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width:500px) {
+    .orders {
+        width: 17rem;
+    }
+
+    .confirm-container, .orders-section {
+        margin-left: 30%;
+    }
+
+    .name-price p {
+        font-size: 0.7rem;
+     }
+
+     .name-price small {
+        font-size: 0.6rem;
+     }
+
+    .food-price input {
+        width: 0.8rem;
+        padding: 0.3rem;
+        margin: 0 0.3rem;
+    }
+
+    .increament-btn {
+        margin-right: 1rem;
+    }
+
+    .del-btn {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+}
+
+@media (max-width:470px) {
+    .confirm-container, .orders-section {
+        margin-left: 25%;
+    }
+
+    .orders {
+        padding: 0.5rem;
+    }
 }
