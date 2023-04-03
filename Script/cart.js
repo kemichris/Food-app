@@ -357,9 +357,10 @@ function addPromoCode() {
     if (promoInput.value == promoCode) {
         totalSummary = discount;
         totalPrice.innerHTML = Math.round(totalSummary);
-        // alert("price reduced by 25%");
+        alert("price reduced by 25%");
     } else {
         totalPrice.innerHTML = totalSummary;
+        alert("promo code is invalid");
     }
 }
 
