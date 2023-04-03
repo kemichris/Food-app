@@ -35,6 +35,7 @@ nav ul {
     margin-right: 3rem;
     font-size: 0.8rem;
     font-weight: 500;
+    color: #549A0A;
 }
 
 .bag-icon {
@@ -295,6 +296,12 @@ p {
     p {
         font-size: 0.8rem;
         width: 20rem;
+    }
+}
+
+@media (max-width:370px) {
+    .bag-icon {
+        margin-left: 0;
     }
 }
 
