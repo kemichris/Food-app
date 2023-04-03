@@ -6,6 +6,8 @@ const decreaseBtn = document.querySelectorAll(".reduce-btn");
 const IncreaseBtn = document.querySelectorAll(".increament-btn");
 const delBtn = document.querySelectorAll(".del-btn");
 const totalPrice = document.getElementById("total-price");
+const promoInput = document.getElementById("promoInput");
+const applyPromoBtn = document.getElementById("apply-promo");
 
 // script for cart item numbers 
 let cart = JSON.parse(localStorage.getItem("foods")).length;
@@ -30,9 +32,10 @@ let breakkie2 = 20;
 let burrito = 30;
 
 let totalSummary = 0;
+
 // ends here 
 
-
+let promoCode = "kemichris";
 
 // calling the fuction to sum the items 
 sumItems();
@@ -175,6 +178,11 @@ delBtn[7].addEventListener("click", ()=>{
 // ends here 
 
 
+
+// promoCode button 
+applyPromoBtn.addEventListener("click", ()=>{
+    addPromoCode();
+});
 
 
 
@@ -339,6 +347,20 @@ function sumItems() {
     }
 
     totalPrice.innerHTML = totalSummary;
+}
+
+
+
+// function for promocode 
+function addPromoCode() {
+    let discount = totalSummary - ( totalSummary * (25/100))
+    if (promoInput.value == promoCode) {
+        totalSummary = discount;
+        totalPrice.innerHTML = Math.round(totalSummary);
+        // alert("price reduced by 25%");
+    } else {
+        totalPrice.innerHTML = totalSummary;
+    }
 }
 
 
