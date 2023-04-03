@@ -354,12 +354,13 @@ function sumItems() {
 // function for promocode 
 function addPromoCode() {
     let discount = totalSummary - ( totalSummary * (25/100))
-    if (promoInput.value == promoCode) {
+    if (promoInput.value == promoCode && JSON.parse(localStorage.getItem("couponcode")) != promoInput.value) {
         totalSummary = discount;
         totalPrice.innerHTML = Math.round(totalSummary);
         alert("price reduced by 25%");
+        updateLocalStorage()
     } else {
-        totalPrice.innerHTML = totalSummary;
+        totalPrice.innerHTML = Math.round(totalSummary);
         alert("promo code is invalid");
     }
 }
@@ -369,5 +370,5 @@ function addPromoCode() {
 // function to update the local storage 
 function updateLocalStorage() {
     localStorage.setItem("foods", JSON.stringify(cartItems));
-    // localStorage.setItem("totalSum", JSON.stringify(totalSum));
+    localStorage.setItem("couponcode", JSON.stringify(promoCode));
 }
