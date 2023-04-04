@@ -180,14 +180,18 @@ delBtn[7].addEventListener("click", ()=>{
 
 
 
-// promoCode button 
+// promoCode button nad confirm button
 applyPromoBtn.addEventListener("click", ()=>{
     addPromoCode();
 });
 
 confrimOrderBtn.addEventListener("click", ()=> {
     alert("Your order is complete and is being processed")
-})
+    localStorage.clear();
+    window.location.reload(true);
+});
+
+
 
 
 
