@@ -63,5 +63,10 @@ function updateLocalStorage() {
 
 // function to create new item 
 function creatNewItem(value) {
-    cartedItems.push(value);
+    if (cartedItems.includes(value)) {
+        
+    } else {
+        cartedItems.push(value);
+    }
+    
 }
