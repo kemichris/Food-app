@@ -262,6 +262,7 @@ p {
     .upper-lg-circle, .lower-lg-circle {
         width: 40rem;
         height: 40rem;
+        display: none;
     }
 
     .upper-lg-circle {
