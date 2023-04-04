@@ -64,7 +64,7 @@ function updateLocalStorage() {
 // function to create new item 
 function creatNewItem(value) {
     if (cartedItems.includes(value)) {
-        
+        alert("Item is already in the cart")
     } else {
         cartedItems.push(value);
     }
