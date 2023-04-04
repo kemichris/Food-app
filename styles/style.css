@@ -35,7 +35,7 @@ nav ul {
     margin-right: 3rem;
     font-size: 0.8rem;
     font-weight: 500;
-    color: #549A0A;
+    color: black;
 }
 
 .bag-icon {
@@ -284,6 +284,39 @@ p {
     
 }
 
+@media (max-width:420px) {
+    .list {
+        color: #549A0A;
+    }
+
+    .upper-lg-circle {
+        width: 18rem;
+        height: 18rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        display: none;
+    }
+
+
+    .lower-lg-circle {
+        width: 25.7rem;
+        height: 20rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .upper-lg-circle {
+        top: 0%;
+        left: 30%;
+    }
+
+    .lower-lg-circle {
+        left: 0;
+        top: 70%;
+    }
+    
+}
+
 @media (max-width:400px) {
     .logo-txt {
         font-size: 0.8rem;
@@ -297,6 +330,30 @@ p {
         font-size: 0.8rem;
         width: 20rem;
     }
+
+    /* .upper-lg-circle, .lower-lg-circle {
+        width: 18rem;
+        height: 18rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    } */
+
+    .lower-lg-circle {
+        width: 23.4rem;
+        height: 20rem;
+    }
+
+    .upper-lg-circle {
+        top: 0%;
+        left: 23%;
+    }
+
+    .lower-lg-circle {
+        left: 0;
+        top: 75%;
+    }
+
+    
 }
 
 @media (max-width:370px) {
