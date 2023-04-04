@@ -8,6 +8,7 @@ const delBtn = document.querySelectorAll(".del-btn");
 const totalPrice = document.getElementById("total-price");
 const promoInput = document.getElementById("promoInput");
 const applyPromoBtn = document.getElementById("apply-promo");
+const confrimOrderBtn = document.getElementById("confirm-btn");
 
 // script for cart item numbers 
 let cart = JSON.parse(localStorage.getItem("foods")).length;
@@ -183,6 +184,10 @@ delBtn[7].addEventListener("click", ()=>{
 applyPromoBtn.addEventListener("click", ()=>{
     addPromoCode();
 });
+
+confrimOrderBtn.addEventListener("click", ()=> {
+    alert("Your order is complete and is being processed")
+})
 
 
 
