@@ -5,3 +5,6 @@
 - users are able to decrease and increase the the quantity of the selected item
 - users are able to get the total value of their item
 - when applied the promotion code 'kemichris' users get a 25% discount
+
+# Live server
+https://kemichris.github.io/Food-app/
